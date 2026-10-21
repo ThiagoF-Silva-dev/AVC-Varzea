@@ -1,0 +1,47 @@
+def main():
+
+#total de gols
+#partida com maior numero de gols marcados
+#regras de pontuacao
+#vitoria ou goleada
+
+    g_time = int(input("Gols marcados pelo nosso time:"))
+    g_adversario = int(input("Gols marcados pelo o adversario:"))
+
+# somar os gols para saber a partida que saiu a maior quantidade de gols
+
+    g_partida = g_time + g_adversario
+
+    print("total de gols marcados na partida:",g_partida)
+
+
+#regras de pontuacao vitoria, derrota e empate
+
+    if g_time > g_adversario:
+        pontos = 3
+        resultado = ("vitoria")
+    elif g_time < g_adversario:
+        pontos = 0
+        resultado = ("derrota")
+    else:
+        pontos = 1
+        resultado = ("empate")
+
+    print("resultado da partida:",resultado)
+    print("pontos ganhos na partida:",pontos)
+
+#ocorreu uma goleada?
+
+    if (g_time - g_adversario) >= 3:
+        goleada = "ocorreu uma goleada"
+    else:
+        goleada = "Nao"
+
+    print("goleada na partida:",goleada)
+
+if __name__ == "__main__":
+    main()
+
+
+
+
