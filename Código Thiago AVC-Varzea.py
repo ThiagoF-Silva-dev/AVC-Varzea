@@ -1,7 +1,7 @@
-def main():
+# =========================================================================
+    # Parte 1: Thiago - Configuração Inicial e Validação da Quantidade de Jogos
+    # =========================================================================
 
-
-    # Parte 1 - Thiago ferreira da silva
     # Exibe o título centralizado do sistemas!
 
     largura = 80
@@ -34,7 +34,3 @@ def main():
     gols_contra = 0
     maior_gols = 0
     registros = [] # Lista vazia para guardar os registros
-
-
-if __name__=="__main__":
-    main()
